@@ -20,9 +20,18 @@ jeffreyDahmer = "let's hang out later!"
 
 -- lists: homogenous data structures...several elements of the same type
 value1 = [123, 23, 23, 99, 11]
+-- this is the cons operator
+value2 = 102938:value1
 
 name1 = "james"
 name2 = "cool"
 
 -- the ++ operator is for concatenation
 firstAndLast = name1 ++ " " ++ name2
+
+--retrieve an element out of a list using !! (a string is a list...and lists are zero-indexed)
+actor = "Steve Buscemi"
+retrieval = actor !! 6
+
+--lists can contain lists
+bigList = [[1234], [5678], [999], [123456789000], [666]]
