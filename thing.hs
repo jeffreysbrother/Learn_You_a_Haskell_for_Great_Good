@@ -29,9 +29,37 @@ name2 = "cool"
 -- the ++ operator is for concatenation
 firstAndLast = name1 ++ " " ++ name2
 
---retrieve an element out of a list using !! (a string is a list...and lists are zero-indexed)
+-- retrieve an element out of a list using !! (a string is a list...and lists are zero-indexed)
 actor = "Steve Buscemi"
 retrieval = actor !! 6
 
---lists can contain lists
+-- lists can contain lists
 bigList = [[1234], [5678], [999], [123456789000], [666]]
+
+
+
+-- functions that operate on lists
+firstElement = head bigList
+allButFirst = tail bigList
+lastElement = last bigList
+allButLast = init bigList
+
+doesntWork = head []
+
+-- length
+-- null (checks if a list is empty)
+-- reverse
+-- take (extract some # of elements from the beginning of a list)
+-- drop (drop a certain # of elements from the beginning of a list)
+-- minimum, maximum
+-- sum, product
+-- elem (tells us whether it's an element...usually used as an infix function: 4 `elem` [3,4,5,6] ... this will return True)
+
+
+-- Texas ranges
+texasRange = [1..200]
+
+-- cycle, repeat, replicate
+iteration = take 40 (cycle[1,2,3,4,5,6])
+tenFives = take 10 (repeat 5)
+bunchOfThrees = replicate 44 3
