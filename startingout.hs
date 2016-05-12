@@ -63,3 +63,8 @@ texasRange = [1..200]
 iteration = take 40 (cycle[1,2,3,4,5,6])
 tenFives = take 10 (repeat 5)
 bunchOfThrees = replicate 44 3
+
+
+-- list comprehensions
+lol = [x*2 | x <- [1..10]]
+lolz = [x*2 | x <- [1..10], x*2 >= 12]
